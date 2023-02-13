@@ -32,38 +32,38 @@ import java.util.*;
 
 
 }
-class Addition extends cal{
+class Addition extends Cal{
 
     public int setCal(int a, int b) {
        return a+b;
     }
 }
-class Subraction extends cal{
+class Subraction extends Cal{
 
     public int setCal(int a, int b) {
         return a-b;
     }
 }
-class Multiplication extends cal{
+class Multiplication extends Cal{
 
     public int setCal(int a, int b) {
         return a*b;
     }
 }
 
-class Division extends cal{
+class Division extends Cal{
      public int setCal(int a,int b){
          return a/b;
      }
 }
-public abstract class Calculator extends cal{
+public abstract class Calculator extends Cal{
     public static void main(String[] args){
         Logger l=Logger.getLogger("Calculator");
         int a;
         int b;
         Scanner sc=new Scanner(System.in);
         int ch;
-        cal c=null;
+        Cal c=null;
         do{
             l.info("1.Addition \n 2.Subraction \n 3.Multiplication \n4.Division");
             l.info("Enter the Choice :");
