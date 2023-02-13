@@ -7,9 +7,10 @@ package org.example;
 //        This project will help you understand OOP concepts such as encapsulation, inheritance, and
 //        polymorphism.
 
+
 import java.util.logging.*;
 import java.util.*;
- abstract class cal{
+ abstract class Cal{
 
      private int a;
      private int b;
@@ -94,7 +95,8 @@ public abstract class Calculator extends cal{
                 c.setB(b);
                 int s1=c.getA();
                 int s2=c.getB();
-                l.info("the Value is "+c.setCal(s1,s2));
+                String s="the Value is "+c.setCal(s1,s2);
+                l.info(s);
 
         }while (ch!=5);
 
